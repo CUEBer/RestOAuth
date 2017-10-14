@@ -1,9 +1,9 @@
 INSERT INTO school (name)
 VALUES
-    ("信息学院");
+    ("CUEB");
 INSERT INTO discipline (id,name,master,doctor,key_Discipline,school_id)
 VALUES
-    ("1201","管理科学与工程",true,false,false,1);
+    ("1201","software",true,false,false,1);
 INSERT INTO role (name)
 VALUES
     ("ADMIN");
@@ -18,7 +18,7 @@ VALUES
     ("DISCIPLINE");
 INSERT INTO account (id,name,password,discipline_id,scholl_id)
 VALUES
-    ("2362","张军","2362","1201",1);
+    ("2362","admin","123","1201",1);
 INSERT INTO account_roles (account_id,roles_name)
 VALUES
     ("2362","ADMIN");

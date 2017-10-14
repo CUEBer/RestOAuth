@@ -1,4 +1,4 @@
-package edu.zj;
+package edu.cueb.degree;
 
 import java.io.IOException;
 

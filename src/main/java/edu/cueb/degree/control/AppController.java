@@ -1,12 +1,8 @@
-package edu.zj;
+package edu.cueb.degree.control;
 
-import javax.servlet.http.HttpServletRequest;
-
-import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -14,12 +10,11 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
 
-import edu.zj.model.Account;
-import edu.zj.model.AccountRepository;
-import edu.zj.model.Discipline;
-import edu.zj.model.DisciplineRepository;
+import edu.cueb.degree.model.Account;
+import edu.cueb.degree.model.AccountRepository;
+import edu.cueb.degree.model.Discipline;
+import edu.cueb.degree.model.DisciplineRepository;
 
 @RestController
 public class AppController {

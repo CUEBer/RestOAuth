@@ -1,4 +1,4 @@
-package edu.zj;
+package edu.cueb.degree;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

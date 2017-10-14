@@ -1,4 +1,4 @@
-package edu.zj.model;
+package edu.cueb.degree.model;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package edu.zj;
+package edu.cueb.degree.oauth;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpStatus;
