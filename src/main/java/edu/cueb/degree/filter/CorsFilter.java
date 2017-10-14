@@ -1,4 +1,4 @@
-package edu.cueb.degree;
+package edu.cueb.degree.filter;
 
 import java.io.IOException;
 
