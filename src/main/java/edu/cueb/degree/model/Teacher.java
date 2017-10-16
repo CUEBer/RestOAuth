@@ -30,6 +30,16 @@ public class Teacher {
         private String title;
         @Column(length = 10)
         private String titledegreen;
+        @Column(length = 10)
+        private String isdelete;
+
+    public String getIsdelete() {
+        return isdelete;
+    }
+
+    public void setIsdelete(String isdelete) {
+        this.isdelete = isdelete;
+    }
 
     public String getId() {
         return id;

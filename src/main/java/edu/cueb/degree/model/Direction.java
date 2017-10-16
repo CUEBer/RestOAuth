@@ -13,6 +13,8 @@ public class Direction {
     private String name;
     @Column(length = 10)
     private String text;
+    @Column(length = 10)
+    private String isdelete;
 
     public String getId() {
         return id;

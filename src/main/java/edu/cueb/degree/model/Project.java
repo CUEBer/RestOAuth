@@ -31,6 +31,8 @@ public class Project {
     private String plantime;
     @Column(length = 100)
     private String disciplineclassification;
+    @Column(length = 10)
+    private String isdelete;
 
     public String getId() {
         return id;

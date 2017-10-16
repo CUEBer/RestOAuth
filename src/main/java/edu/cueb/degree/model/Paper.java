@@ -27,6 +27,8 @@ public class Paper {
     private String publishjournals;
     @Column(length = 20)
     private String journaltype;
+    @Column(length = 10)
+    private String isdelete;
 
     public String getFirstauthorid() {
         return firstauthorid;
@@ -98,5 +100,29 @@ public class Paper {
 
     public void setJournaltype(String journaltype) {
         this.journaltype = journaltype;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public String getPapertitle() {
+        return papertitle;
+    }
+
+    public void setPapertitle(String papertitle) {
+        this.papertitle = papertitle;
+    }
+
+    public String getIsdelete() {
+        return isdelete;
+    }
+
+    public void setIsdelete(String isdelete) {
+        this.isdelete = isdelete;
     }
 }

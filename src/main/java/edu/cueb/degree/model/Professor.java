@@ -10,6 +10,16 @@ public class Professor {
     private String directionid;
     @Column(length = 4)
     private String teacherid;
+    @Column(length = 10)
+    private String isdelete;
+
+    public String getIsdelete() {
+        return isdelete;
+    }
+
+    public void setIsdelete(String isdelete) {
+        this.isdelete = isdelete;
+    }
 
     public String getDirectionid() {
         return directionid;
