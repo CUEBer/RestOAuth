@@ -3,6 +3,7 @@ package edu.cueb.degree.control;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -25,6 +26,9 @@ public class AppController {
 
 	@RequestMapping(method = RequestMethod.GET, value = "/account/{accountId}")
 	Account readAccount(@PathVariable String accountId) {
+		if(StringUtils.isEmpty(accountId)||"undefined".equals(accountId)){
+			return null;
+		}
 		return this.accountRepsoitory.findById(accountId).get();
 	}
 

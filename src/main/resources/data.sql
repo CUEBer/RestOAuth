@@ -18,7 +18,7 @@ VALUES
     ("DISCIPLINE");
 INSERT INTO account (id,name,password,discipline_id,scholl_id)
 VALUES
-    ("2362","admin","123","1201",1);
+    ("123","admin","123","1201",1);
 INSERT INTO account_roles (account_id,roles_name)
 VALUES
     ("2362","ADMIN");
