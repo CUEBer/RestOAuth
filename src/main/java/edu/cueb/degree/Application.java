@@ -8,9 +8,9 @@ import org.springframework.security.oauth2.config.annotation.web.configuration.E
 @EnableResourceServer 
 @EnableAuthorizationServer 
 @SpringBootApplication
-public class RestOAuthApplication {
+public class Application {
 
 	public static void main(String[] args) {
-		SpringApplication.run(RestOAuthApplication.class, args);
+		SpringApplication.run(Application.class, args);
 	}
 }
