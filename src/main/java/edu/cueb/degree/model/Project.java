@@ -14,7 +14,7 @@ public class Project {
     @Column(length = 500)
     private String projectname;
     @Column(length = 50)
-    private String belongcollege;
+    private String attachtocollege;
     @Column(length = 200)
     private String projectmember;
     @Column(length = 200)
@@ -24,11 +24,11 @@ public class Project {
     @Column(length = 10)
     private String projectlevel;
     @Column(length = 100)
-    private String projectsourceunit;
+    private String projectsourceorganization;
     @Column(length = 20 )
-    private String projecttime;
+    private String startprojecttime;
     @Column(length = 20)
-    private String plantime;
+    private String completetime;
     @Column(length = 100)
     private String disciplineclassification;
     @Column(length = 10)
@@ -58,12 +58,12 @@ public class Project {
         this.projectname = projectname;
     }
 
-    public String getBelongcollege() {
-        return belongcollege;
+    public String getAttachtocollege() {
+        return attachtocollege;
     }
 
-    public void setBelongcollege(String belongcollege) {
-        this.belongcollege = belongcollege;
+    public void setAttachtocollege(String belongcollege) {
+        this.attachtocollege =attachtocollege;
     }
 
     public String getProjectmember() {
@@ -98,28 +98,28 @@ public class Project {
         this.projectlevel = projectlevel;
     }
 
-    public String getProjectsourceunit() {
-        return projectsourceunit;
+    public String getProjectsourceorganization() {
+        return projectsourceorganization;
     }
 
-    public void setProjectsourceunit(String projectsourceunit) {
-        this.projectsourceunit = projectsourceunit;
+    public void setProjectsourceorganization(String projectsourceunit) {
+        this.projectsourceorganization = projectsourceorganization;
     }
 
-    public String getProjecttime() {
-        return projecttime;
+    public String getStartprojecttime() {
+        return startprojecttime;
     }
 
-    public void setProjecttime(String projecttime) {
-        this.projecttime = projecttime;
+    public void setStartprojecttime(String projecttime) {
+        this.startprojecttime = startprojecttime;
     }
 
-    public String getPlantime() {
-        return plantime;
+    public String getCompletetime() {
+        return completetime;
     }
 
-    public void setPlantime(String plantime) {
-        this.plantime = plantime;
+    public void setCompletetime(String plantime) {
+        this.completetime = completetime;
     }
 
     public String getDisciplineclassification() {
