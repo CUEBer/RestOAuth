@@ -11,15 +11,26 @@ import javax.persistence.OneToMany;
 
 @Entity
 public class School {
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private int id;
+
+	@Column(unique=true,length=30)
+	String name;
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
 	public int getId() {
 		return id;
 	}
 	public String getName() {
 		return name;
 	}
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int id;
-	@Column(unique=true,length=30)
-	String name;
 }

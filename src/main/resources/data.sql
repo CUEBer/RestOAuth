@@ -1,6 +1,6 @@
 INSERT INTO school (name)
 VALUES
-    ("CUEB");
+    ("Information School");
 INSERT INTO discipline (id,name,master,doctor,key_Discipline,school_id)
 VALUES
     ("1201","software",true,false,false,1);
