@@ -1,6 +1,6 @@
 INSERT INTO school (name)
 VALUES
-    ("CUEB");
+    ("Information School");
 INSERT INTO discipline (id,name,master,doctor,key_Discipline,school_id)
 VALUES
     ("1201","software",true,false,false,1);
@@ -18,7 +18,7 @@ VALUES
     ("DISCIPLINE");
 INSERT INTO account (id,name,password,discipline_id,scholl_id)
 VALUES
-    ("2362","admin","123","1201",1);
+    ("123","admin","123","1201",1);
 INSERT INTO account_roles (account_id,roles_name)
 VALUES
     ("2362","ADMIN");
