@@ -1,15 +1,12 @@
 package edu.cueb.degree.model;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.OneToOne;
+import javax.persistence.*;
 
 @Entity
 public class Structure {
     @Id
-    @Column(length=10)
-    private String id;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
     @OneToOne
     private Discipline discipline;
     @Column (length=10)
