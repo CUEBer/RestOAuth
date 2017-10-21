@@ -14,4 +14,10 @@ public class SchoolController {
 	School add(School school) {
 		return this.schoolRepository.save(school);
 	}
+
+	@RequestMapping(method = RequestMethod.GET, value = "/query/{schoolId}")
+	School get(@PathVariable int schoolId) {
+		School rs= this.schoolRepository.findById(schoolId).get();
+		return rs;
+	}
 }
