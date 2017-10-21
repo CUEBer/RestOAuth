@@ -24,7 +24,6 @@ public class Structure {
     @Column(length=10)
     private String above61;
 
-
     public int getId() {
         return id;
     }
