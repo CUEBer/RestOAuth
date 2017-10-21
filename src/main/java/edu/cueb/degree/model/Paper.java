@@ -25,7 +25,7 @@ public class Paper {
     private String publishtime;
     @Column(length = 200 )
     private String publishjournals;
-    @Column(length = 20)
+    @Column(length = 50)
     private String journaltype;
     @Column(length = 10)
     private String isdelete;
