@@ -1,5 +1,8 @@
 package edu.cueb.degree.model;
 
+import javax.persistence.Entity;
+
+@Entity
 public class AgeStructure {
     private int total;
     private int under35;
