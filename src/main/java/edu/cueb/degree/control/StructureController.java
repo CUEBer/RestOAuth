@@ -19,7 +19,7 @@ public class StructureController {
     Structure add (Structure structure){return this.structureRepository.save(structure);}
 
     @RequestMapping(method=RequestMethod.GET,value = "/query/{structureId}")
-    Structure get(@PathVariable String structureId){
+    Structure get(@PathVariable Integer structureId){
         Structure rs=this.structureRepository.findById(structureId).get();
         return rs;
     }
