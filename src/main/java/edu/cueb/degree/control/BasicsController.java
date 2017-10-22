@@ -3,8 +3,7 @@ package edu.cueb.degree.control;
 import edu.cueb.degree.model.Basics;
 
 
-import edu.cueb.degree.model.BasicsRepository;
-import edu.cueb.degree.model.Crossing;
+import edu.cueb.degree.repository.BasicsRepository;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;

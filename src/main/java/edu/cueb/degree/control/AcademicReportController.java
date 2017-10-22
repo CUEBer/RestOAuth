@@ -1,7 +1,7 @@
 package edu.cueb.degree.control;
 
 import edu.cueb.degree.model.AcademicReport;
-import edu.cueb.degree.model.AcademicReportRepository;
+import edu.cueb.degree.repository.AcademicReportRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;

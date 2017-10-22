@@ -1,8 +1,7 @@
 package edu.cueb.degree.control;
 
-import edu.cueb.degree.model.School;
 import edu.cueb.degree.model.Structure;
-import edu.cueb.degree.model.StructureRepository;
+import edu.cueb.degree.repository.StructureRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;

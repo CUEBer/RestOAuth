@@ -1,19 +1,27 @@
 package edu.cueb.degree.model;
 
-import edu.cueb.degree.util.JpaConverterJson;
-
-import javax.persistence.*;
+import javax.persistence.Column;
+import javax.persistence.Convert;
+import javax.persistence.Entity;
+import javax.persistence.Id;
 
 @Entity
 public class TeamStructure {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private int disc_id;
     private double pDoctor;
     private double pMaster;
-    @Column(columnDefinition = "json")
+    @Column(columnDefinition="json")
     @Convert(converter = JpaConverterJson.class)
-    private AgeStructure struct[];
+    private AgeTeamStructure struct[];
+
+    public int getDisc_id() {
+        return disc_id;
+    }
+
+    public void setDisc_id(int disc_id) {
+        this.disc_id = disc_id;
+    }
 
     public double getpDoctor() {
         return pDoctor;
@@ -31,26 +39,11 @@ public class TeamStructure {
         this.pMaster = pMaster;
     }
 
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public AgeStructure[] getStruct() {
+    public AgeTeamStructure[] getStruct() {
         return struct;
     }
 
-    public void setStruct(AgeStructure[] struct) {
+    public void setStruct(AgeTeamStructure[] struct) {
         this.struct = struct;
     }
-
-
 }
-
-
-
-

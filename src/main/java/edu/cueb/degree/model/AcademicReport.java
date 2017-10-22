@@ -1,15 +1,12 @@
 package edu.cueb.degree.model;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.OneToOne;
+import javax.persistence.*;
 
 @Entity
 public class AcademicReport {
     @Id
-    @Column(length = 5)
-    private String id;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer id;
     @Column(length = 50)
     private String reportname;
     @Column(length = 20)
@@ -31,11 +28,11 @@ public class AcademicReport {
         this.discipline = discipline;
     }
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 

@@ -1,8 +1,9 @@
 package edu.cueb.degree.control;
 
 import edu.cueb.degree.model.PrizeList;
-import edu.cueb.degree.model.PrizeListRepository;
+import edu.cueb.degree.repository.PrizeListRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
@@ -25,8 +26,8 @@ public class PrizeListController {
     PrizeList update(PrizeList prizeList2){
         return this.prizeListRepository.save(prizeList2);
     }
-    @RequestMapping(method = RequestMethod.GET,value = "/query")
-    PrizeList query(PrizeList prizeList3){
-         return this.prizeListRepository.save(prizeList3);
+    @RequestMapping(method = RequestMethod.GET,value = "/query/{prizeListId}")
+    PrizeList query(@PathVariable String prizeListId){
+         return this.prizeListRepository.findById(prizeListId).get();
     }
 }

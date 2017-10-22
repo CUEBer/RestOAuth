@@ -1,14 +1,12 @@
-package edu.cueb.degree.util;
-
-import java.io.IOException;
-
-import javax.persistence.AttributeConverter;
+package edu.cueb.degree.model;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-public class JpaConverterJson implements AttributeConverter<Object, String> {
+import javax.persistence.AttributeConverter;
+import java.io.IOException;
 
+public class JpaConverterJson implements AttributeConverter<Object,String> {
     private final static ObjectMapper objectMapper = new ObjectMapper();
 
     @Override
@@ -32,5 +30,4 @@ public class JpaConverterJson implements AttributeConverter<Object, String> {
             return null;
         }
     }
-
 }

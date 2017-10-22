@@ -1,7 +1,7 @@
 package edu.cueb.degree.control;
 
 import edu.cueb.degree.model.PrizeLevel;
-import edu.cueb.degree.model.PrizeLevelRepository;
+import edu.cueb.degree.repository.PrizeLevelRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;

@@ -1,5 +1,6 @@
 package edu.cueb.degree.control;
 
+import edu.cueb.degree.repository.DisciplineRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -13,9 +14,8 @@ import org.springframework.web.bind.annotation.RestController;
 import com.fasterxml.jackson.core.JsonProcessingException;
 
 import edu.cueb.degree.model.Account;
-import edu.cueb.degree.model.AccountRepository;
+import edu.cueb.degree.repository.AccountRepository;
 import edu.cueb.degree.model.Discipline;
-import edu.cueb.degree.model.DisciplineRepository;
 
 @RestController
 public class AppController {

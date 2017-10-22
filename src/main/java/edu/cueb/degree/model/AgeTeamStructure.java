@@ -1,15 +1,16 @@
 package edu.cueb.degree.model;
 
-import javax.persistence.Entity;
 
-@Entity
-public class AgeStructure {
+
+
+public class AgeTeamStructure {
     private int total;
     private int under35;
     private int btw36_45;
     private int btw46_55;
     private int btw56_60;
-    public AgeStructure(int total, int under35, int btw36_45, int btw46_55, int btw56_60, int above60) {
+    private int above60;
+    public AgeTeamStructure(int total, int under35, int btw36_45, int btw46_55, int btw56_60, int above60) {
         super();
         this.total = total;
         this.under35 = under35;
@@ -18,7 +19,6 @@ public class AgeStructure {
         this.btw56_60 = btw56_60;
         this.above60 = above60;
     }
-    private int above60;
     public int getTotal() {
         return total;
     }
