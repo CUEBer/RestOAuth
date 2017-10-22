@@ -3,14 +3,14 @@ package edu.cueb.degree.model;
 
 
 
-public class AgeTeamStructure {
+public class AgeStructure {
     private int total;
     private int under35;
     private int btw36_45;
     private int btw46_55;
     private int btw56_60;
     private int above60;
-    public AgeTeamStructure(int total, int under35, int btw36_45, int btw46_55, int btw56_60, int above60) {
+    public AgeStructure(int total, int under35, int btw36_45, int btw46_55, int btw56_60, int above60) {
         super();
         this.total = total;
         this.under35 = under35;

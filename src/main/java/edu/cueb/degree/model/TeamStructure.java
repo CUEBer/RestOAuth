@@ -13,7 +13,7 @@ public class TeamStructure {
     private double pMaster;
     @Column(columnDefinition="json")
     @Convert(converter = JpaConverterJson.class)
-    private AgeTeamStructure struct[];
+    private AgeStructure struct[];
 
     public int getDisc_id() {
         return disc_id;
@@ -39,11 +39,11 @@ public class TeamStructure {
         this.pMaster = pMaster;
     }
 
-    public AgeTeamStructure[] getStruct() {
+    public AgeStructure[] getStruct() {
         return struct;
     }
 
-    public void setStruct(AgeTeamStructure[] struct) {
+    public void setStruct(AgeStructure[] struct) {
         this.struct = struct;
     }
 }
