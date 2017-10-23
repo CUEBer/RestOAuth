@@ -6,7 +6,8 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 
 @Entity
-public class TeamStructure {
+public class
+TeamStructure {
     @Id
     private int disc_id;
     private double pDoctor;

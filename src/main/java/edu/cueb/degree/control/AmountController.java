@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 import javax.xml.ws.RequestWrapper;
 
 @RestController
-@RequestMapping
+@RequestMapping("amount")
 public class AmountController {
     @Autowired
     private AmountRepository amountRepository;
