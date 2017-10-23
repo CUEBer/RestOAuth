@@ -19,7 +19,10 @@ public class StructureController {
 
     @RequestMapping(method=RequestMethod.GET,value = "/query/{structureId}")
     Structure get(@PathVariable Integer structureId){
-        Structure rs=this.structureRepository.findById(structureId).get();
+        Structure rs=null;
+        if(structureId==null){
+            rs=this.structureRepository.findById(structureId).get();
+        }
         return rs;
     }
 }

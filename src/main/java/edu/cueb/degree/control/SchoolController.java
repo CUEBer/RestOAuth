@@ -13,12 +13,21 @@ public class SchoolController {
 
 	@RequestMapping(method = RequestMethod.GET, value = "/add")
 	School add(School school) {
-		return this.schoolRepository.save(school);
+		return this.schoolRepository.saveAndFlush(school);
 	}
 
 	@RequestMapping(method = RequestMethod.GET, value = "/query/{schoolId}")
-	School get(@PathVariable int schoolId) {
-		School rs= this.schoolRepository.findById(schoolId).get();
+	School get(@PathVariable Integer schoolId) {
+		School rs=null;
+		if(schoolId!=null){
+			rs= this.schoolRepository.findById(schoolId).get();
+		}
+		return rs;
+	}
+
+	@RequestMapping(method = RequestMethod.GET, value = "/update")
+	School update(School school) {
+		School rs= this.schoolRepository.saveAndFlush(school);
 		return rs;
 	}
 }
