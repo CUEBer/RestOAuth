@@ -4,6 +4,7 @@ import edu.cueb.degree.model.CrossingMoney;
 
 import edu.cueb.degree.repository.CrossingMoneyRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
@@ -25,8 +26,8 @@ public class CrossingMoneyController {
     CrossingMoney update(CrossingMoney crossingMoney2){
         return this.crossingMoneyRepository.save(crossingMoney2);
     }
-    @RequestMapping(method = RequestMethod.GET,value = "/query")
-    CrossingMoney query(CrossingMoney crossingMoney3){
-        return this.crossingMoneyRepository.save(crossingMoney3);
+    @RequestMapping(method = RequestMethod.GET,value = "/query/{CrossingMoneyId}")
+    CrossingMoney query(@PathVariable String crossingMoneyId){
+        return this.crossingMoneyRepository.findById(crossingMoneyId).get();
     }
 }

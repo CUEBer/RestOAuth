@@ -5,6 +5,7 @@ import edu.cueb.degree.model.Crossing;
 
 import edu.cueb.degree.repository.CrossingRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
@@ -27,8 +28,8 @@ public class CrossingController {
     Crossing update(Crossing crossing2){
         return this.crossingRepository.save(crossing2);
     }
-    @RequestMapping(method = RequestMethod.GET,value = "/query")
-    Crossing query(Crossing crossing3){
-      return this.crossingRepository.save(crossing3);
+    @RequestMapping(method = RequestMethod.GET,value = "/query/{CrossingId}")
+    Crossing query(@PathVariable String crossingId){
+      return this.crossingRepository.findById(crossingId).get();
     }
 }

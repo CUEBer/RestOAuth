@@ -19,7 +19,7 @@ public class TutorGuidanceController {
     }
     @RequestMapping(method = RequestMethod.POST,value = "/delete")
     void delete(TutorGuidance tutorGuidance){
-        this.tutorGuidanceRepository.save(tutorGuidance);
+        this.tutorGuidanceRepository.delete(tutorGuidance);
     }
     @RequestMapping(method = RequestMethod.POST,value = "/update")
     TutorGuidance update(TutorGuidance tutorGuidance){

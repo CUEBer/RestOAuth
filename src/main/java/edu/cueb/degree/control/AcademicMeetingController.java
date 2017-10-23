@@ -28,7 +28,7 @@ public class AcademicMeetingController {
     AcademicMeeting update(AcademicMeeting academicMeeting){
         return this.academicMeetingRepository.save(academicMeeting);
     }
-    @RequestMapping(method = RequestMethod.POST,value = "/add/{AcademicMeetingId}")
+    @RequestMapping(method = RequestMethod.GET,value = "/add/{AcademicMeetingId}")
     AcademicMeeting add(@PathVariable String academicMeetingId){
         return this.academicMeetingRepository.findById(academicMeetingId).get();
     }

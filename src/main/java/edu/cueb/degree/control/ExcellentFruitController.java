@@ -25,7 +25,7 @@ public class ExcellentFruitController {
     ExcellentFruit update(ExcellentFruit excellentFruit2){
         return this.excellentFruitRepository.save(excellentFruit2);
     }
-    @RequestMapping(method = RequestMethod.POST,value = "/query/{ExcellentFruitId}")
+    @RequestMapping(method = RequestMethod.GET,value = "/query/{ExcellentFruitId}")
     ExcellentFruit get(@PathVariable int excellentFruitId){
         return this.excellentFruitRepository.findById(excellentFruitId).get();
     }
