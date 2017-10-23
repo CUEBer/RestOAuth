@@ -40,5 +40,5 @@ VALUES
 INSERT INTO role_users (role_name,users_id)
 VALUES
     ("DISCIPLINE","2362");
-    INSERT INTO `structure` (`id`, `above61`, `between36to45`, `between46to55`, `between56to60`, `duty`, `totalnumber`, `under35`, `discipline_id`) VALUES ('1', '2', '3', '2', '3', '1', '1', '3', '1201');
+    INSERT INTO `structure` (`id`, `above61`, `between36to45`, `between46to55`, `between56to60`, `duty`, `totalnumber`, `under35`, `discipline_id`) VALUES ('1201', '2', '3', '2', '3', '1', '1', '3', '1201');
 

@@ -17,11 +17,11 @@ public class StructureController {
     @RequestMapping(method = RequestMethod.GET,value = "/add")
     Structure add (Structure structure){return this.structureRepository.save(structure);}
 
-    @RequestMapping(method=RequestMethod.GET,value = "/query/{structureId}")
-    Structure get(@PathVariable Integer structureId){
+    @RequestMapping(method=RequestMethod.GET,value = "/query/{disciplineId}")
+    Structure get(@PathVariable Integer disciplineId){
         Structure rs=null;
-        if(structureId==null){
-            rs=this.structureRepository.findById(structureId).get();
+        if(disciplineId!=null){
+            rs=this.structureRepository.findById(disciplineId).get();
         }
         return rs;
     }
