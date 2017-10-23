@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("tutorGuidance")
+@RequestMapping("tutorguidance")
 public class TutorGuidanceController {
     @Autowired
     private TutorGuidanceRepository tutorGuidanceRepository;

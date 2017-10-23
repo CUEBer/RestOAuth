@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("admissionConditions")
+@RequestMapping("admissionconditions")
 public class AdmissionConditionsController {
     @Autowired
     private AdmissionConditionsRepository admissionConditionsRepository;

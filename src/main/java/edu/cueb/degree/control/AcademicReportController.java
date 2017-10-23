@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("academicReport")
+@RequestMapping("academicreport")
 public class AcademicReportController {
     @Autowired
     private AcademicReportRepository academicReportRepository;
