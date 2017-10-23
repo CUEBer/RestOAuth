@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("textConstruction")
+@RequestMapping("textconstruction")
 public class TextConstructionController {
     @Autowired
     private TextConstructionRepository textConstructionRepository;

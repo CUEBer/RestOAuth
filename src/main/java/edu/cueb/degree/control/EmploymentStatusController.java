@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("employmentStatus")
+@RequestMapping("employmentstatus")
 public class EmploymentStatusController {
     @Autowired
     private EmploymentStatusRepository employmentStatusRepository;

@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("nationalPrizeLevel")
+@RequestMapping("nationalprizeLevel")
 public class PrizeLevelController {
    @Autowired
    private PrizeLevelRepository prizeLevelRepository;

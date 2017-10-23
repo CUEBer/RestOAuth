@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("joinMeeting")
+@RequestMapping("joinmeeting")
 public class JoinMeetingController {
     @Autowired
     private JoinMeetingRepository joinMeetingRepository;

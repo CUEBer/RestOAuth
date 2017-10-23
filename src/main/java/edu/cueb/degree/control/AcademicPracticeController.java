@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("academicPractice")
+@RequestMapping("academicpractice")
 public class AcademicPracticeController {
     @Autowired
     private AcademicPracticeRepository academicPracticeRepository;
