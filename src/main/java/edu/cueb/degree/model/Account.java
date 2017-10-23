@@ -41,10 +41,10 @@ public class Account implements UserDetails {
 	@OneToOne
 	private Discipline discipline;
 	@OneToOne
-	private School scholl;
+	private School school;
 
-	public String getSchollName() {
-		return scholl.getName();
+	public String getSchoolName() {
+		return school.getName();
 	}
 	public String getDisciplineName() {
 		return discipline.getName();
