@@ -16,7 +16,7 @@ VALUES
 INSERT INTO role (name)
 VALUES
     ("DISCIPLINE");
-INSERT INTO account (id,name,password,discipline_id,scholl_id)
+INSERT INTO account (id,name,password,discipline_id,school_id)
 VALUES
     ("123","admin","123","1201",1);
 INSERT INTO account_roles (account_id,roles_name)
