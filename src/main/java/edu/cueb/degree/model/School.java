@@ -17,7 +17,7 @@ public class School {
 	private int id;
 
 	@Column(unique=true,length=30)
-	String name;
+	private String name;
 
 	public void setId(int id) {
 		this.id = id;
